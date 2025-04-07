@@ -47,7 +47,7 @@ public class Eletronic implements Product{
 	// Implementation of getDescription() from the Product interface.
 	@Override
 	public String getDescription() {
-		return "Eletronic: " + brand + " - " + model + " - $" + price;
+		return "Eletronic: " + brand + " - " + model + " - $" + String.format("%.2f", price);
 	}
 
 }

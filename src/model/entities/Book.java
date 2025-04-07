@@ -47,6 +47,6 @@ public class Book implements Product{
 	// Implementation of the getDescription() method from the Product interface.
 	@Override
 	public String getDescription() {
-		return "Book: " + title + " by " + author + " - $" + price;
+		return "Book: " + title + " by " + author + " - $" + String.format("%.2f", price);
 	}
 }

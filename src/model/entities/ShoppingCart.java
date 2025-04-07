@@ -37,7 +37,8 @@ public class ShoppingCart {
 		System.out.println("------------------------");
 		System.out.println("Products in cart:");
 		for(Product x : products) {
-			System.out.println(x);
+			System.out.println(x.getDescription());
 		}
+		System.out.println("Total: $" + String.format("%.2f", getTotal()));
 	}
 }
